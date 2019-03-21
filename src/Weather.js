@@ -166,7 +166,7 @@ class Weather extends React.Component {
         lon = pos.coords.longitude;
         axios
           .get(
-            `http://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${lon}&cnt=10&units=metric&APPID=${API}`
+            `https://api.openweathermap.org/data/2.5/find?lat=${lat}&lon=${lon}&cnt=10&units=metric&APPID=${API}`
           )
           .then(res => {
             this.setState({
@@ -196,7 +196,7 @@ class Weather extends React.Component {
   handleDialog = (city, name) => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast?id=${city}&units=metric&APPID=${API}`
+        `https://api.openweathermap.org/data/2.5/forecast?id=${city}&units=metric&APPID=${API}`
       )
       .then(res => {
         this.setState(
