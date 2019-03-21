@@ -1,5 +1,13 @@
+body {
+  font-family: 'Lato', sans-serif;
+
+}
+
+
 .App {
   text-align: center;
+  padding:50px;
+
 }
 
 .App-logo {
